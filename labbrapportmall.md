@@ -89,8 +89,8 @@ Bedömning:   Verkligt. Lösenordet syntes i klartext i terminalens loggutskrift
 Bevis efter: se bilder nedan. CodeQL-alert #13 visar Closed as fixed efter ny
              körning.
 ```
-![Bevis fore - losenord i klartext i terminalen](bevis/inlogg-uppgifter-i-klartext-i-terminalen-före-åtgård.png)
-![Bevis efter - losenord borttaget fran loggen](bevis/inlogg-uppgifter-i-klartext-i-terminalen-efter-åtgård.png)
+![Bevis fore - losenord i klartext i terminalen](bevis/inlogg-uppgifter-i-klartext-i-terminalen-före-åtgärd.png)
+![Bevis efter - losenord borttaget fran loggen](bevis/inlogg-uppgifter-i-klartext-i-terminalen-efter-åtgärd.png)
 ![Bevis efter - CodeQL Closed as fixed](bevis/codeql-scan-efter-åtgärder.png)
 
 ### Åtgärd 3
