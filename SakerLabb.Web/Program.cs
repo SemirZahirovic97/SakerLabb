@@ -42,11 +42,7 @@ app.Use(async (context, next) =>
 app.UseCors();
 
 app.UseStaticFiles();
-app.UseDirectoryBrowser(new DirectoryBrowserOptions
-{
-    FileProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.WebRootPath, "files")),
-    RequestPath = "/files"
-});
+
 
 app.UseAntiforgery();
 
