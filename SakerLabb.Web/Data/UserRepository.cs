@@ -19,7 +19,9 @@ public class UserRepository
         using var connection = _db.Open();
         var command = connection.CreateCommand();
         command.CommandText = "SELECT Id, Username, PasswordHash, Role, Email, Personnummer, SecurityAnswer, ResetToken FROM Users "
-            + "WHERE Username = '" + username + "' AND PasswordHash = '" + CryptoService.HashPassword(password) + "'";
+            + "WHERE Username = $u AND PasswordHash = $p";
+        command.Parameters.AddWithValue("$u", username);
+        command.Parameters.AddWithValue("$p", CryptoService.HashPassword(password));
 
         var user = Read(command).FirstOrDefault();
 
